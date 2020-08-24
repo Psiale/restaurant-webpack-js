@@ -1,1 +1,3 @@
-alert('Sup hommie')
+import createpage from './load';
+
+createpage();
