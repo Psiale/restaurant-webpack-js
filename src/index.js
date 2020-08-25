@@ -1,3 +1,8 @@
-import createpage from './load';
+import  { createPage } from './load';
+import './index.css';
+import about from './about';
 
-createpage();
+createPage();
+const aboutTab = document.getElementById('About');
+
+aboutTab.addEventListener('click', about, false);
