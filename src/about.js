@@ -2,6 +2,7 @@ import {
   createPage, mainContainer, headlineContainer, root,
 } from './load';
 import tabBuilder from './tabs';
+import home from './home';
 
 const aboutContainer = document.createElement('div');
 const aboutParagraph = document.createElement('p');
@@ -22,6 +23,8 @@ const renderAbout = () => {
   shippingParagraph.innerHTML = 'Check our products and shipping offers';
   addingAttributes();
   tabBuilder(mainContainer);
+  const homeTab = document.getElementById('Home');
+  homeTab.addEventListener('click', home, false);
   aboutContainer.appendChild(aboutParagraph);
   aboutContainer.appendChild(shippingParagraph);
   mainContainer.appendChild(headlineContainer);
