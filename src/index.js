@@ -1,4 +1,4 @@
-import  { createPage } from './load';
+import { createPage } from './load';
 import './index.css';
 import about from './about';
 

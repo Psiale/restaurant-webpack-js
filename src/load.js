@@ -43,4 +43,5 @@ export {
   createPage,
   mainContainer,
   headlineContainer,
+  root,
 };
