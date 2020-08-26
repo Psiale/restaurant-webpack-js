@@ -1,8 +1,7 @@
 import {
   createTabs,
-} from './load';
-import { root, mainContainer, headlineContainer } from './domCreation';
-import tabBuilder from './tabs';
+} from './domCreation';
+import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
 
 
 const aboutContainer = document.createElement('div');
@@ -22,7 +21,6 @@ const renderAbout = () => {
   aboutParagraph.innerHTML = 'We are a speciality coffee shop focused on selling the greatest mexican coffee beans.';
   shippingParagraph.innerHTML = 'Check our products and shipping offers';
   addingAttributes();
-  tabBuilder(mainContainer);
 
   aboutContainer.appendChild(aboutParagraph);
   aboutContainer.appendChild(shippingParagraph);

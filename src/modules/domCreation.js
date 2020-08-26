@@ -1,5 +1,6 @@
 import tabBuilder from './tabs';
-import { root, mainContainer, headlineContainer } from './domCreation';
+import MainBackground from '../img/main-background.jpg';
+import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
 // import renderAbout from './about';
 
 
@@ -12,12 +13,12 @@ const info = document.createElement('p');
 
 const createTabs = () => {
   mainContainer.innerHTML = '';
+  mainContainer.style.backgroundImage = MainBackground;
   tabBuilder(mainContainer);
 };
 
 const createPage = () => {
   // creating elements
-  tabBuilder(mainContainer);
   // adding classes to HTML elements
   mainContainer.classList.add('main-container');
   info.classList.add('main-info');
@@ -27,10 +28,9 @@ const createPage = () => {
   img.classList.add('main-img');
 
   // adding elements to HTML
-  img.src = 'https://libreshot.com/wp-content/uploads/2016/03/coffee-beans-1.jpg';
+  mainContainer.style.backgroundImage = MainBackground;
   imgTitle.innerHTML = 'Zongolica, Veracruz';
-  imgContainer.appendChild(imgTitle);
-  imgContainer.appendChild(img);
+
   headline.innerHTML = 'Historia Mexicana del Café';
   subheadline.innerHTML = 'Coffee beans for sale';
   info.innerHTML = 'This coffee tastes like heaven';
@@ -38,7 +38,6 @@ const createPage = () => {
   headlineContainer.appendChild(subheadline);
   mainContainer.appendChild(headlineContainer);
   imgContainer.appendChild(info);
-  mainContainer.appendChild(imgContainer);
   root.appendChild(mainContainer);
 };
 
