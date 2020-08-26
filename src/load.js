@@ -1,9 +1,8 @@
 import tabBuilder from './tabs';
+import { root, mainContainer, headlineContainer } from './domCreation';
+// import renderAbout from './about';
 
 
-const root = document.getElementById('content');
-const mainContainer = document.createElement('div');
-const headlineContainer = document.createElement('div');
 const headline = document.createElement('h1');
 const subheadline = document.createElement('h1');
 const imgContainer = document.createElement('div');
@@ -11,10 +10,14 @@ const imgTitle = document.createElement('h3');
 const img = document.createElement('img');
 const info = document.createElement('p');
 
+const createTabs = () => {
+  mainContainer.innerHTML = '';
+  tabBuilder(mainContainer);
+};
+
 const createPage = () => {
   // creating elements
   tabBuilder(mainContainer);
-
   // adding classes to HTML elements
   mainContainer.classList.add('main-container');
   info.classList.add('main-info');
@@ -39,9 +42,18 @@ const createPage = () => {
   root.appendChild(mainContainer);
 };
 
+// const tabsEvent = () => {
+//   const homeTab = document.getElementById('Home');
+//   const aboutTab = document.getElementById('About');
+//   const productTab = document.getElementById('Product');
+//   homeTab.addEventListener('click', createPage);
+//   aboutTab.addEventListener('click', renderAbout);
+// }
+
 export {
   createPage,
   mainContainer,
   headlineContainer,
   root,
+  createTabs,
 };

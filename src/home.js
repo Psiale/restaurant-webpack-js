@@ -1,5 +1,5 @@
-import { createPage, mainContainer } from './load';
-import tabBuilder from './tabs';
+import { createPage } from './load';
+import { mainContainer } from './domCreation';
 
 const home = () => {
   mainContainer.innerHTML = '';

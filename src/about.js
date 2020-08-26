@@ -1,8 +1,9 @@
 import {
-  createPage, mainContainer, headlineContainer, root,
+  createTabs,
 } from './load';
+import { root, mainContainer, headlineContainer } from './domCreation';
 import tabBuilder from './tabs';
-import home from './home';
+
 
 const aboutContainer = document.createElement('div');
 const aboutParagraph = document.createElement('p');
@@ -17,14 +18,12 @@ const addingAttributes = () => {
 };
 
 const renderAbout = () => {
-  createPage();
-  mainContainer.innerHTML = '';
+  createTabs();
   aboutParagraph.innerHTML = 'We are a speciality coffee shop focused on selling the greatest mexican coffee beans.';
   shippingParagraph.innerHTML = 'Check our products and shipping offers';
   addingAttributes();
   tabBuilder(mainContainer);
-  const homeTab = document.getElementById('Home');
-  homeTab.addEventListener('click', home, false);
+
   aboutContainer.appendChild(aboutParagraph);
   aboutContainer.appendChild(shippingParagraph);
   mainContainer.appendChild(headlineContainer);
