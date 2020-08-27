@@ -1,7 +1,6 @@
 
 import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
 import CoffeeBeans from '../classes/CoffeeBean';
-import eventListenerCreation from './eventListeners';
 
 const coffeeContainer = document.createElement('div');
 const COFFEECATALOG = [
