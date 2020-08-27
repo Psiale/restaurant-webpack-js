@@ -1,8 +1,8 @@
-import { createTabs } from './domCreation';
+
 import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
 import CoffeeBeans from '../classes/CoffeeBean';
+import eventListenerCreation from './eventListeners';
 
-createTabs();
 const coffeeContainer = document.createElement('div');
 const COFFEECATALOG = [
   new CoffeeBeans(
@@ -40,29 +40,29 @@ const coffeeSectionBuilder = (subHeadline, info, subContent, infoContent) => {
 
 const itemBuilder = () => {
   coffeeContainer.classList.add('coffee-container');
-  COFFEECATALOG.forEach(coffee => {
-    const headlineElement = document.createElement('h2');
-    const imgElement = document.createElement('img');
-    const itemContainer = document.createElement('div');
-    const subHeadlineElement = document.createElement('h3');
-    const infoElement = document.createElement('h4');
-    const pElement = document.createElement('p');
-    itemContainer.classList.add('coffee-item');
-    headlineElement.innerHTML = coffee.region;
-    imgElement.src = coffee.img;
-    itemContainer.appendChild(headlineElement);
-    itemContainer.appendChild(imgElement);
-    itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, infoElement, 'Process', coffee.process));
-    itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, infoElement, 'Profile', coffee.profile));
-    itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, pElement, 'Description', coffee.description));
-    coffeeContainer.appendChild(itemContainer);
-    console.log(itemContainer);
-  });
+  if (coffeeContainer.childNodes.length === 0) {
+    COFFEECATALOG.forEach(coffee => {
+      const headlineElement = document.createElement('h2');
+      const imgElement = document.createElement('img');
+      const itemContainer = document.createElement('div');
+      const subHeadlineElement = document.createElement('h3');
+      const infoElement = document.createElement('h4');
+      const pElement = document.createElement('p');
+      itemContainer.classList.add('coffee-item');
+      headlineElement.innerHTML = coffee.region;
+      imgElement.src = coffee.img;
+      itemContainer.appendChild(headlineElement);
+      itemContainer.appendChild(imgElement);
+      itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, infoElement, 'Process', coffee.process));
+      itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, infoElement, 'Profile', coffee.profile));
+      itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, pElement, 'Description', coffee.description));
+      coffeeContainer.appendChild(itemContainer);
+    });
+  }
   return coffeeContainer;
 };
 
 const renderProduct = () => {
-  createTabs();
   mainContainer.appendChild(headlineContainer);
   mainContainer.appendChild(itemBuilder());
   root.appendChild(mainContainer);

@@ -1,7 +1,6 @@
-import {
-  createTabs,
-} from './domCreation';
+
 import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
+import eventListenerCreation from './eventListeners';
 
 
 const aboutContainer = document.createElement('div');
@@ -17,7 +16,7 @@ const addingAttributes = () => {
 };
 
 const renderAbout = () => {
-  createTabs();
+  eventListenerCreation();
   aboutParagraph.innerHTML = 'We are a speciality coffee shop focused on selling the greatest mexican coffee beans.';
   shippingParagraph.innerHTML = 'Check our products and shipping offers';
   addingAttributes();
