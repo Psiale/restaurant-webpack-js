@@ -1,4 +1,5 @@
 const tabText = ['Home', 'Product', 'About'];
+
 const childContent = (child, textContent) => {
   child.innerHTML = textContent;
   child.id = textContent;
