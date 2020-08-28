@@ -1,10 +1,9 @@
-import { createTabs } from './domCreation';
+
 import renderAbout from './about';
 import home from './home';
 import renderProduct from './products';
 
 const eventListenerCreation = () => {
-  createTabs();
   const aboutTab = document.getElementById('About');
   const homeTab = document.getElementById('Home');
   const productsTab = document.getElementById('Product');

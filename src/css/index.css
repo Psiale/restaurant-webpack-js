@@ -27,11 +27,12 @@ html {
 
 h1 {
   font-family: 'YanoneKaffeesatz-Bold', sans-serif;
+  background-color: rgba(1, 1, 1, 0.6);
 }
 
 #content {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-container {
@@ -44,29 +45,28 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
 }
 
 .tab-container {
   display: flex;
-  width: 33%;
-  background-color: #519872;
-  height: 100vh;
+  width: 100%;
+  background-color: #3b5249;
+  height: 50px;
   justify-content: space-evenly;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .tab-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 33.33%;
   height: 50px;
   font-size: 3.5vw;
   font-family: 'YanoneKaffeesatz-Medium', sans-serif;
   color: white;
 }
-
 
 .main-headline {
   width: 100%;
@@ -130,4 +130,61 @@ h1 {
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  #content {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .tab-container {
+    display: flex;
+    position: fixed;
+    width: 30%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #3b5249;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .tab-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-size: 3.5vw;
+    font-family: 'YanoneKaffeesatz-Medium', sans-serif;
+    color: white;
+  }
+
+  .main-container {
+    margin-top: auto;
+    margin-left: auto;
+    width: 70%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background: url('../img/main-background.jpg') no-repeat center center fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-flow: column nowrap;
+  }
+
+  .coffee-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }

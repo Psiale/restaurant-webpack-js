@@ -14,7 +14,7 @@ const info = document.createElement('p');
 const createTabs = () => {
   mainContainer.innerHTML = '';
   mainContainer.style.backgroundImage = MainBackground;
-  tabBuilder(mainContainer);
+  tabBuilder(root);
 };
 
 const createPage = () => {
@@ -51,8 +51,5 @@ const createPage = () => {
 
 export {
   createPage,
-  mainContainer,
-  headlineContainer,
-  root,
   createTabs,
 };

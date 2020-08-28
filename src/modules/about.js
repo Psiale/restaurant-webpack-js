@@ -16,6 +16,7 @@ const addingAttributes = () => {
 };
 
 const renderAbout = () => {
+  mainContainer.innerHTML = '';
   eventListenerCreation();
   aboutParagraph.innerHTML = 'We are a speciality coffee shop focused on selling the greatest mexican coffee beans.';
   shippingParagraph.innerHTML = 'Check our products and shipping offers';

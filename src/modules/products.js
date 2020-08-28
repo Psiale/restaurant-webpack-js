@@ -62,6 +62,7 @@ const itemBuilder = () => {
 };
 
 const renderProduct = () => {
+  mainContainer.innerHTML = '';
   mainContainer.appendChild(headlineContainer);
   mainContainer.appendChild(itemBuilder());
   root.appendChild(mainContainer);
