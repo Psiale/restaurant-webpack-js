@@ -3,7 +3,6 @@ module.exports = {
   mode: 'development',
   entry: [
     './src/index.js',
-    'font-awesome/scss/font-awesome.scss',
   ],
   devtool: 'inline-source-map',
   module: {
@@ -26,13 +25,6 @@ module.exports = {
         use: [
           'file-loader',
         ],
-      },
-      {
-        test: /font-awesome\.config\.js/,
-        use: [
-          { loader: 'style-loader' },
-          { loader: 'font-awesome-loader' }
-        ]
       },
     ],
   },
