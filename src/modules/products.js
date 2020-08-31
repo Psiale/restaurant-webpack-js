@@ -23,7 +23,7 @@ const COFFEECATALOG = [
     'Washed',
     'Chocolate, Nuts',
     'Coffee bean with a classic taste, strong and marked flavours',
-    'https://videohive.img.customer.envatousercontent.com/files/126e43a5-9a07-4955-bc89-66082140a2e9/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=ef8c83cdcb37c63be8973250ed222d11',
+    'img/black-coffee-bag.jpg',
   ),
 ];
 
@@ -50,8 +50,8 @@ const itemBuilder = () => {
       itemContainer.classList.add('coffee-item');
       headlineElement.innerHTML = coffee.region;
       imgElement.src = coffee.img;
-      itemContainer.appendChild(headlineElement);
       itemContainer.appendChild(imgElement);
+      itemContainer.appendChild(headlineElement);
       itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, infoElement, 'Process', coffee.process));
       itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, infoElement, 'Profile', coffee.profile));
       itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, pElement, 'Description', coffee.description));
