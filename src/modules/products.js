@@ -1,6 +1,13 @@
 
 import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
 import CoffeeBeans from '../classes/CoffeeBean';
+import CoffeeBag from '../img/coffee-bag.jpg';
+import CoffeeBag1 from '../img/coffee-bag-1.jpg';
+import CoffeeBag2 from '../img/coffee-bag-3.jpg';
+import eventListenerCreation from './eventListeners';
+
+const html = document.getElementsByTagName('html');
+
 
 const coffeeContainer = document.createElement('div');
 const COFFEECATALOG = [
@@ -9,21 +16,21 @@ const COFFEECATALOG = [
     'Washed',
     'Chocolate, Nuts',
     'Coffee bean with a classic taste, strong and marked flavors',
-    'https://videohive.img.customer.envatousercontent.com/files/126e43a5-9a07-4955-bc89-66082140a2e9/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=ef8c83cdcb37c63be8973250ed222d11',
+    CoffeeBag,
   ),
   new CoffeeBeans(
-    'Oaxaca',
+    'Veracruz',
     'Washed',
     'Chocolate, Nuts',
     'Coffee bean with a classic taste, strong and marked flavors',
-    'https://videohive.img.customer.envatousercontent.com/files/126e43a5-9a07-4955-bc89-66082140a2e9/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=ef8c83cdcb37c63be8973250ed222d11',
+    CoffeeBag1,
   ),
   new CoffeeBeans(
-    'Oaxaca',
+    'Chiapas',
     'Washed',
     'Chocolate, Nuts',
     'Coffee bean with a classic taste, strong and marked flavours',
-    'img/black-coffee-bag.jpg',
+    CoffeeBag2,
   ),
 ];
 
@@ -44,17 +51,14 @@ const itemBuilder = () => {
       const headlineElement = document.createElement('h2');
       const imgElement = document.createElement('img');
       const itemContainer = document.createElement('div');
-      const subHeadlineElement = document.createElement('h3');
-      const infoElement = document.createElement('h4');
-      const pElement = document.createElement('p');
+      const addToCart = document.createElement('button');
       itemContainer.classList.add('coffee-item');
       headlineElement.innerHTML = coffee.region;
       imgElement.src = coffee.img;
+      addToCart.innerHTML = 'Add to Cart';
       itemContainer.appendChild(imgElement);
       itemContainer.appendChild(headlineElement);
-      itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, infoElement, 'Process', coffee.process));
-      itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, infoElement, 'Profile', coffee.profile));
-      itemContainer.appendChild(coffeeSectionBuilder(subHeadlineElement, pElement, 'Description', coffee.description));
+      itemContainer.appendChild(addToCart);
       coffeeContainer.appendChild(itemContainer);
     });
   }
@@ -62,6 +66,7 @@ const itemBuilder = () => {
 };
 
 const renderProduct = () => {
+  document.body.style.backgroundColor = '#c9d6df';
   mainContainer.innerHTML = '';
   mainContainer.appendChild(headlineContainer);
   mainContainer.appendChild(itemBuilder());
