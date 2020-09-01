@@ -1,5 +1,5 @@
 
-import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
+import { root, mainContainer, headlineContainer, headline } from './sharedHTMLElements';
 import eventListenerCreation from './eventListeners';
 
 
@@ -17,6 +17,7 @@ const addingAttributes = () => {
 
 const renderAbout = () => {
   mainContainer.innerHTML = '';
+  headline.innerHTML = 'Made with love';
   eventListenerCreation();
   aboutParagraph.innerHTML = 'We are a speciality coffee shop focused on selling the greatest mexican coffee beans.';
   shippingParagraph.innerHTML = 'Check our products and shipping offers';

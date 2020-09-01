@@ -66,7 +66,7 @@ const itemBuilder = () => {
 const renderProduct = () => {
   document.body.style.backgroundColor = '#c9d6df';
   mainContainer.innerHTML = '';
-  headline.innerHTML = '';
+  headline.innerHTML = 'Coffee Beans for Sale';
   mainContainer.appendChild(headlineContainer);
   mainContainer.appendChild(itemBuilder());
   root.appendChild(mainContainer);

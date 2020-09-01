@@ -32,7 +32,6 @@ const createPage = (headlineText) => {
   imgTitle.innerHTML = 'Zongolica, Veracruz';
 
   headline.innerHTML = headlineText;
-  subheadline.innerHTML = 'Coffee beans for sale';
   info.innerHTML = 'This coffee tastes like heaven';
   headlineContainer.appendChild(headline);
   headlineContainer.appendChild(subheadline);
