@@ -1,11 +1,9 @@
 import tabBuilder from './tabs';
 import MainBackground from '../img/main-background.svg';
-import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
+import {
+  root, mainContainer, headlineContainer, headline, subheadline,
+} from './sharedHTMLElements';
 // import renderAbout from './about';
-
-
-const headline = document.createElement('h1');
-const subheadline = document.createElement('h1');
 const imgContainer = document.createElement('div');
 const imgTitle = document.createElement('h3');
 const img = document.createElement('img');
@@ -17,12 +15,14 @@ const createTabs = () => {
   tabBuilder(root);
 };
 
-const createPage = () => {
+const createPage = (headlineText) => {
   // creating elements
   // adding classes to HTML elements
   mainContainer.classList.add('main-container');
   info.classList.add('main-info');
   headlineContainer.classList.add('main-headline');
+  headlineContainer.id = 'headlineContainer';
+  subheadline.id = 'subheadline';
   imgContainer.classList.add('main-img-container');
   imgTitle.classList.add('img-title');
   img.classList.add('main-img');
@@ -31,7 +31,7 @@ const createPage = () => {
   mainContainer.style.backgroundImage = MainBackground;
   imgTitle.innerHTML = 'Zongolica, Veracruz';
 
-  headline.innerHTML = 'Historia Mexicana del Café';
+  headline.innerHTML = headlineText;
   subheadline.innerHTML = 'Coffee beans for sale';
   info.innerHTML = 'This coffee tastes like heaven';
   headlineContainer.appendChild(headline);

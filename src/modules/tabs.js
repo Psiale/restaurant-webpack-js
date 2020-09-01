@@ -1,3 +1,5 @@
+import Bean from '../img/bean.svg';
+
 const tabText = ['Home', 'Product', 'About'];
 
 const childContent = (child, textContent) => {

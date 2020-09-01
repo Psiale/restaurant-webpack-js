@@ -12,7 +12,7 @@
    width="512"
    version="1.1"
    id="svg1241"
-   sodipodi:docname="beans-bag.svg"
+   sodipodi:docname="beans-bag-veracruz.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <metadata
      id="metadata1247">
@@ -28,6 +28,18 @@
   </metadata>
   <defs
      id="defs1245">
+    <rect
+       id="rect960"
+       height="27.473684"
+       width="15.602339"
+       y="39.05614"
+       x="12.177778" />
+    <rect
+       id="rect954"
+       height="19.876023"
+       width="44.771929"
+       y="59.814034"
+       x="57.763742" />
     <rect
        x="8.3111111"
        y="23.996491"
@@ -51,7 +63,7 @@
      showgrid="false"
      inkscape:zoom="1.6699219"
      inkscape:cx="229.86647"
-     inkscape:cy="195.94218"
+     inkscape:cy="85.204239"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
@@ -148,15 +160,23 @@
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:3.02083px;line-height:1.25;font-family:sans-serif;fill:#f0f5f9;fill-opacity:1;stroke:none;stroke-width:0.113281"
-           x="16.256073"
-           y="40.989742"
+           x="15.277878"
+           y="40.963932"
            id="text945"
            transform="matrix(1.0000102,-0.00101017,-0.02416323,1.0000142,0,0)"><tspan
              sodipodi:role="line"
              id="tspan943"
-             x="16.256073"
-             y="40.989742"
-             style="font-size:3.02083px;fill:#f0f5f9;fill-opacity:1;stroke-width:0.113281">Oaxaca</tspan></text>
+             x="15.277878"
+             y="40.963932"
+             style="font-size:3.02083px;fill:#f0f5f9;fill-opacity:1;stroke-width:0.113281">Veracruz</tspan></text>
+        <text
+           style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:4.53125px;white-space:pre;shape-inside:url(#rect954);"
+           id="text952"
+           xml:space="preserve" />
+        <text
+           style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:4.53125px;white-space:pre;shape-inside:url(#rect960);"
+           id="text958"
+           xml:space="preserve" />
       </g>
     </g>
   </g>

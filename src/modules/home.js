@@ -5,7 +5,7 @@ import eventListenerCreation from './eventListeners';
 const home = () => {
   mainContainer.innerHTML = '';
   eventListenerCreation();
-  createPage();
+  createPage('Historia del Café Mexicano');
 };
 
 export default home;

@@ -1,9 +1,11 @@
 
-import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
+import {
+  root, mainContainer, headlineContainer, headline,
+} from './sharedHTMLElements';
 import CoffeeBeans from '../classes/CoffeeBean';
 import CoffeeBag from '../img/beans-bag.svg';
-import CoffeeBag1 from '../img/coffee-bag-1.jpg';
-import CoffeeBag2 from '../img/coffee-bag-3.jpg';
+import CoffeeBag1 from '../img/beans-bag-chiapas.svg';
+import CoffeeBag2 from '../img/beans-bag-veracruz.svg';
 
 const html = document.getElementsByTagName('html');
 
@@ -47,16 +49,13 @@ const itemBuilder = () => {
   coffeeContainer.classList.add('coffee-container');
   if (coffeeContainer.childNodes.length === 0) {
     COFFEECATALOG.forEach(coffee => {
-      const headlineElement = document.createElement('h2');
       const imgElement = document.createElement('img');
       const itemContainer = document.createElement('div');
       const addToCart = document.createElement('button');
       itemContainer.classList.add('coffee-item');
-      headlineElement.innerHTML = coffee.region;
       imgElement.src = coffee.img;
       addToCart.innerHTML = 'Add to Cart';
       itemContainer.appendChild(imgElement);
-      itemContainer.appendChild(headlineElement);
       itemContainer.appendChild(addToCart);
       coffeeContainer.appendChild(itemContainer);
     });
@@ -67,6 +66,7 @@ const itemBuilder = () => {
 const renderProduct = () => {
   document.body.style.backgroundColor = '#c9d6df';
   mainContainer.innerHTML = '';
+  headline.innerHTML = '';
   mainContainer.appendChild(headlineContainer);
   mainContainer.appendChild(itemBuilder());
   root.appendChild(mainContainer);
