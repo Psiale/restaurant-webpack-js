@@ -1,10 +1,9 @@
 
 import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
 import CoffeeBeans from '../classes/CoffeeBean';
-import CoffeeBag from '../img/coffee-bag.jpg';
+import CoffeeBag from '../img/beans-bag.svg';
 import CoffeeBag1 from '../img/coffee-bag-1.jpg';
 import CoffeeBag2 from '../img/coffee-bag-3.jpg';
-import eventListenerCreation from './eventListeners';
 
 const html = document.getElementsByTagName('html');
 

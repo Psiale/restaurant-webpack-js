@@ -1,5 +1,5 @@
 import tabBuilder from './tabs';
-import MainBackground from '../img/main-background.jpg';
+import MainBackground from '../img/main-background.svg';
 import { root, mainContainer, headlineContainer } from './sharedHTMLElements';
 // import renderAbout from './about';
 
