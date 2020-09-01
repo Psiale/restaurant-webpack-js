@@ -33,6 +33,20 @@ const COFFEECATALOG = [
     'Coffee bean with a classic taste, strong and marked flavours',
     CoffeeBag2,
   ),
+  new CoffeeBeans(
+    'Veracruz',
+    'Washed',
+    'Chocolate, Nuts',
+    'Coffee bean with a classic taste, strong and marked flavors',
+    CoffeeBag1,
+  ),
+  new CoffeeBeans(
+    'Chiapas',
+    'Washed',
+    'Chocolate, Nuts',
+    'Coffee bean with a classic taste, strong and marked flavours',
+    CoffeeBag2,
+  ),
 ];
 
 const coffeeSectionBuilder = (subHeadline, info, subContent, infoContent) => {
@@ -64,8 +78,9 @@ const itemBuilder = () => {
 };
 
 const renderProduct = () => {
-  document.body.style.backgroundColor = '#c9d6df';
   mainContainer.innerHTML = '';
+  mainContainer.classList.remove('main-background');
+  mainContainer.classList.remove('about-background');
   headline.innerHTML = 'Coffee Beans for Sale';
   mainContainer.appendChild(headlineContainer);
   mainContainer.appendChild(itemBuilder());

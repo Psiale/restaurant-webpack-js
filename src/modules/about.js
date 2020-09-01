@@ -1,5 +1,7 @@
 
-import { root, mainContainer, headlineContainer, headline } from './sharedHTMLElements';
+import {
+  root, mainContainer, headlineContainer, headline,
+} from './sharedHTMLElements';
 import eventListenerCreation from './eventListeners';
 
 
@@ -17,6 +19,8 @@ const addingAttributes = () => {
 
 const renderAbout = () => {
   mainContainer.innerHTML = '';
+  mainContainer.classList.remove('main-background');
+  mainContainer.classList.add('about-background');
   headline.innerHTML = 'Made with love';
   eventListenerCreation();
   aboutParagraph.innerHTML = 'We are a speciality coffee shop focused on selling the greatest mexican coffee beans.';

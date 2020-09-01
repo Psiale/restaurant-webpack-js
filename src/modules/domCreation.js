@@ -18,7 +18,9 @@ const createTabs = () => {
 const createPage = (headlineText) => {
   // creating elements
   // adding classes to HTML elements
+  document.body.style.backgroundColor = '#c9d6df';
   mainContainer.classList.add('main-container');
+  mainContainer.classList.add('main-background');
   info.classList.add('main-info');
   headlineContainer.classList.add('main-headline');
   headlineContainer.id = 'headlineContainer';
@@ -28,10 +30,8 @@ const createPage = (headlineText) => {
   img.classList.add('main-img');
 
   // adding elements to HTML
-  mainContainer.style.backgroundImage = MainBackground;
   imgTitle.innerHTML = 'Zongolica, Veracruz';
-
-  headline.innerHTML = headlineText;
+  if (window.innerWidth > 767) { headline.innerHTML = headlineText; } else { headline.innerHTML = ''; }
   info.innerHTML = 'This coffee tastes like heaven';
   headlineContainer.appendChild(headline);
   headlineContainer.appendChild(subheadline);
