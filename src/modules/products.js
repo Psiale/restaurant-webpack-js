@@ -7,9 +7,6 @@ import CoffeeBag from '../img/beans-bag.svg';
 import CoffeeBag1 from '../img/beans-bag-chiapas.svg';
 import CoffeeBag2 from '../img/beans-bag-veracruz.svg';
 
-const html = document.getElementsByTagName('html');
-
-
 const coffeeContainer = document.createElement('div');
 const COFFEECATALOG = [
   new CoffeeBeans(
@@ -56,14 +53,15 @@ const COFFEECATALOG = [
   ),
 ];
 
-const coffeeSectionBuilder = (subHeadline, info, subContent, infoContent) => {
-  const container = document.createElement('div');
-  container.classList.add('coffee-section-container');
-  subHeadline.innerHTML = subContent;
-  info.innerHTML = infoContent;
-  container.appendChild(subHeadline);
-  container.appendChild(info);
-  return container;
+
+const addRemoveItem = (event) => {
+  if (window.getComputedStyle(event.target).backgroundColor) {
+    event.target.style.backgroundColor = '#c9d6df';
+    event.target.innerHTML = 'Added';
+    event.target.style.color = '#1e2022';
+  } else {
+    event.target.style.backgroundColor = '#1e2022';
+  }
 };
 
 const itemBuilder = () => {
@@ -73,6 +71,7 @@ const itemBuilder = () => {
       const imgElement = document.createElement('img');
       const itemContainer = document.createElement('div');
       const addToCart = document.createElement('button');
+      addToCart.addEventListener('click', addRemoveItem, false);
       itemContainer.classList.add('coffee-item');
       imgElement.src = coffee.img;
       addToCart.innerHTML = 'Add to Cart';

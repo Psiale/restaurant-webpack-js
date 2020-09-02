@@ -14,7 +14,9 @@
       "import/no-cycle": "off",
       "no-param-reassign": "off",
       "eol-last": "off",
-      "arrow-parens": "off"
+      "arrow-parens": "off",
+      "no-underscore-dangle": "off",
+      "import/no-extraneous-dependencies": "off"
     },
     "ignorePatterns": [
       "dist/",

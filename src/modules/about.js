@@ -31,7 +31,6 @@ const childContent = (anchor, child, cla, link) => {
 };
 
 
-
 const childMaker = (parent, numOfChilds) => {
   for (let i = 0; i < numOfChilds; i += 1) {
     const child = document.createElement('i');

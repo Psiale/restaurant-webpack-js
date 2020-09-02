@@ -1,4 +1,3 @@
-import Bean from '../img/bean.svg';
 
 const tabText = ['Home', 'Product', 'About'];
 

@@ -151,7 +151,7 @@ h1 {
 }
 
 .tab-child:hover {
-  background-color:  #1e2022;
+  background-color: #1e2022;
   color: #f0f5f9;
 }
 
@@ -297,9 +297,9 @@ h1 {
   }
 
   .about-paragraph,
-#subheadline {
-  font-size: 4vw;
-}
+  #subheadline {
+    font-size: 4vw;
+  }
 
   #content {
     flex-direction: row;
@@ -367,7 +367,6 @@ h1 {
   .coffee-item > button {
     font-size: 3vw;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
