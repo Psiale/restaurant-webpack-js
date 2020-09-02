@@ -47,6 +47,13 @@ const COFFEECATALOG = [
     'Coffee bean with a classic taste, strong and marked flavours',
     CoffeeBag2,
   ),
+  new CoffeeBeans(
+    'Oaxaca',
+    'Washed',
+    'Chocolate, Nuts',
+    'Coffee bean with a classic taste, strong and marked flavors',
+    CoffeeBag,
+  ),
 ];
 
 const coffeeSectionBuilder = (subHeadline, info, subContent, infoContent) => {

@@ -142,10 +142,17 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 33.33%;
-  height: 50px;
+  height: auto;
   font-size: 7vw;
   color: #1e2022;
   font-family: 'Amatic-SC', cursive;
+  padding: 5px 0;
+  transition: background-color 0.5s;
+}
+
+.tab-child:hover {
+  background-color:  #1e2022;
+  color: #f0f5f9;
 }
 
 .main-headline {
@@ -339,12 +346,13 @@ h1 {
     width: 90%;
     height: 100%;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
   }
 
   .coffee-item {
+    width: calc(50% - 20px);
     padding-bottom: 10px;
   }
 
@@ -355,12 +363,24 @@ h1 {
   .icon-child {
     font-size: 6vw;
   }
-  
+
+  .coffee-item > button {
+    font-size: 3vw;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
   .about-paragraph,
   #subheadline {
     font-size: 3vw;
+  }
+
+  .coffee-item {
+    width: calc(33.3333% - 20px);
+  }
+
+  .coffee-item > button {
+    font-size: 2vw;
   }
 }
