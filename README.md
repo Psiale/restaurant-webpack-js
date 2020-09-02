@@ -6,7 +6,7 @@ This project focuses on creating a static Restaurant page.
 
 ## 🧮 The Project Brief
 
-The specifications and the guide to the project can be found The Odin Project's ['Library Project'](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page) page.
+The specifications and the guide to the project can be found The Odin Project's ['Restaurant Project'](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page) page.
 
 The premise of this project is to use webpack and only JS modules to create a Restaurant page. Here the user will be able to see a landing page, a menu page, and an about page.
 
