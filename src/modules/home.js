@@ -1,9 +1,10 @@
 import { createPage } from './domCreation';
-import { mainContainer } from './sharedHTMLElements';
+import { mainContainer, subheadline } from './sharedHTMLElements';
 import eventListenerCreation from './eventListeners';
 
 const home = () => {
   mainContainer.innerHTML = '';
+  subheadline.innerHTML = '';
   mainContainer.classList.add('main-background');
   mainContainer.classList.remove('about-background');
   eventListenerCreation();

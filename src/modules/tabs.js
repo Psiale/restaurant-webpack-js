@@ -19,6 +19,7 @@ const childMaker = (parent, numOfChilds) => {
 const tabBuilder = (parent) => {
   const tabContainer = document.createElement('div');
   tabContainer.classList.add('tab-container');
+  tabContainer.classList.add('slide-in-left');
   childMaker(tabContainer, 3);
   parent.appendChild(tabContainer);
 };

@@ -1,6 +1,6 @@
 
 import {
-  root, mainContainer, headlineContainer, headline,
+  root, mainContainer, headlineContainer, headline, subheadline,
 } from './sharedHTMLElements';
 import CoffeeBeans from '../classes/CoffeeBean';
 import CoffeeBag from '../img/beans-bag.svg';
@@ -79,6 +79,7 @@ const itemBuilder = () => {
 
 const renderProduct = () => {
   mainContainer.innerHTML = '';
+  subheadline.innerHTML = '';
   mainContainer.classList.remove('main-background');
   mainContainer.classList.remove('about-background');
   headline.innerHTML = 'Coffee Beans for Sale';
