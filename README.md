@@ -1,4 +1,4 @@
-# ☕ Book Library - Javascript
+# ☕ Coffee Shop- Javascript
 
 This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/).
 
