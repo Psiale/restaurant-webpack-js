@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Amatic-SC';
+  src:
+    url('../fonts/AmaticSC-Bold.woff') format('woff2'),
+    url('../fonts/AmaticSC-Bold.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Old-Standard';
+  src:
+    url('../fonts/OldStandardTT-Regular.woff2') format('woff2'),
+    url('../fonts/OldStandardTT-Regular.woff') format('woff');
+  font-weight: 400;
+}
