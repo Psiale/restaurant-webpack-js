@@ -30,9 +30,6 @@ The premise of this project is to use webpack and only JS modules to create a Re
 
 ## 🔰 Setup & Usage
 
-### Setup
-To view the project in action, follow [this link to the live website](#) or download the repository and open the HTML file with your browser of choice (we'd recommend Chrome).
-
 ## 🛎️ Contributions, Issues & Forking
 
 If you have any issues setting up the project or you come across any unintended bugs or problems, please do submit an issue to the [Book Library](https://github.com/Psiale/restaurant-webpack-js/issues) page.
