@@ -1,5 +1,15 @@
 # ☕ Coffee Shop- Javascript
 
+## Preview
+
+### Mobile
+![Mobile](./src/img/mobile.gif)
+### Tablet
+![Tablet](./src/img/tablet.gif)
+### Desktop 
+![Desktop](./src/img/laptop.gif)
+
+
 This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/).
 
 This project focuses on creating a static Restaurant page.
