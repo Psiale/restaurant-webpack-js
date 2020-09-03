@@ -3,7 +3,7 @@ import MainBackground from '../img/main-background.svg';
 import {
   root, mainContainer, headlineContainer, headline, subheadline,
 } from './sharedHTMLElements';
-// import renderAbout from './about';
+
 const imgContainer = document.createElement('div');
 const imgTitle = document.createElement('h3');
 const img = document.createElement('img');
@@ -16,8 +16,6 @@ const createTabs = () => {
 };
 
 const createPage = (headlineText) => {
-  // creating elements
-  // adding classes to HTML elements
   document.body.style.backgroundColor = '#c9d6df';
   mainContainer.classList.add('main-container');
   mainContainer.classList.add('main-background');
@@ -29,7 +27,6 @@ const createPage = (headlineText) => {
   imgTitle.classList.add('img-title');
   img.classList.add('main-img');
 
-  // adding elements to HTML
   imgTitle.innerHTML = 'Zongolica, Veracruz';
   if (window.innerWidth > 767) { headline.innerHTML = headlineText; } else { headline.innerHTML = ''; }
   info.innerHTML = 'This coffee tastes like heaven';
@@ -40,13 +37,6 @@ const createPage = (headlineText) => {
   root.appendChild(mainContainer);
 };
 
-// const tabsEvent = () => {
-//   const homeTab = document.getElementById('Home');
-//   const aboutTab = document.getElementById('About');
-//   const productTab = document.getElementById('Product');
-//   homeTab.addEventListener('click', createPage);
-//   aboutTab.addEventListener('click', renderAbout);
-// }
 
 export {
   createPage,

@@ -23,7 +23,6 @@ const addingAttributes = () => {
 };
 
 const childContent = (anchor, child, cla, link) => {
-  // child.id = textContent;
   child.classList.add('icon-child');
   child.classList.add('fab');
   child.classList.add(cla);
@@ -62,7 +61,6 @@ const renderAbout = () => {
   mainContainer.appendChild(headlineContainer);
   mainContainer.appendChild(aboutContainer);
   root.appendChild(mainContainer);
-//   I need to add some text in here.
 };
 
 
