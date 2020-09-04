@@ -27,12 +27,13 @@ The premise of this project is to use webpack and only JS modules to create a Re
 - StyleLint
 - CSS/SASS
 - Stickler CI
+- Webpack
 
 ## 🔰 Setup & Usage
 
 ## 🛎️ Contributions, Issues & Forking
 
-If you have any issues setting up the project or you come across any unintended bugs or problems, please do submit an issue to the [Book Library](https://github.com/Psiale/restaurant-webpack-js/issues) page.
+If you have any issues setting up the project or you come across any unintended bugs or problems, please do submit an issue to the [Restaurant](https://github.com/Psiale/restaurant-webpack-js/issues) page.
 
 If you want to make your own changes, modifications or improvements to our project, go ahead and Fork it!
 1. [Fork it](https://github.com/Psiale/restaurant-webpack-js/fork)
